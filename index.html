@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>汽车</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/engine1.css" />
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio; //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+</head>
+<body>
+    <header>
+        <span><img src="img/head_1.png" alt=""></span>
+        <span><img src="img/head_2.png" alt=""></span>
+    </header>
+    <div class="banner">
+        <img src="img/banner.png" alt="">
+        <p>敢梦 敢证</p>
+        <p>T-ROC自信登场 官方指导价13.98万元起</p>
+    </div>
+   <video controls>
+        <source src="video/video.mp4"  type="video/mp4">
+        您的浏览器不支持 HTML5 video 标签。
+    </video>
+    <ul class="Price">
+        <img src="img/main_2.png" alt="">
+        <li>
+            <span>200TSI手动时尚</span><hr>
+            <p>
+                <img src="img/main_13.png" alt="">
+                点式LED日行灯/全LED熏黑式尾灯
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                Auto Hold自动驻车/EPB电子驻车
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                16英寸VENNNTURI铝轮毂
+            </p>
+            <button>售价：<a>139,800</a>元</button>
+        </li>
+        <li>
+             <span>230TSI自动时尚</span><hr>
+            <p>
+                <img src="img/main_13.png" alt="">
+                7档手自动一体DSG双离合
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                点式LED日行灯/全LED熏黑式尾灯
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                Auto Hold自动驻车/EPB电子驻车
+            </p>
+            <button>售价：<a>153,800</a>元</button>
+
+        </li>
+        <li>
+             <span>230TSI自动进取</span><hr>
+            <p>
+                <img src="img/main_13.png" alt="">
+                全LED透镜大灯/环形LED日行灯/ &nbsp;&nbsp;&nbsp;全LED熏黑式尾灯
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                真皮多功能方向盘
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                定速巡航
+            </p>
+            <button>售价：<a>159,800</a>元</button>
+        </li>
+        <li>
+             <span>280TSI自动进取</span><hr>
+            <p>
+                <img src="img/main_13.png" alt="">
+                全LED透镜大灯/环形LED日行灯/
+                 &nbsp;&nbsp;&nbsp;全LED熏黑式尾灯
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                真皮多功能方向盘
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                定速巡航
+            </p>
+            <button>售价：<a>165,800</a>元</button>
+        </li>
+        <li>
+            <span>280TSI自动舒适</span><hr>
+            <p>
+                <img src="img/main_13.png" alt="">
+                无钥匙进入/一键启动系统
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                Front Assist欲碰撞安全系统<br> &nbsp;&nbsp;&nbsp;(含CEB城市紧急制动)
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                定速巡航
+            </p>
+            <button>售价：<a>175,800</a>元</button>
+        </li>
+        <li>
+            <span>280TSI自动豪华</span><hr>
+            <p>
+                <img src="img/main_13.png" alt="">
+                Actie Info Display全液晶数字仪表
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                10向电动调节前排座椅/电动尾门
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                18英寸FERROL铝轮毂
+            </p>
+            <button>售价：<a>190,800</a>元</button>
+        </li>
+        <li>
+            <span>280TSI自动舒适四驱</span><hr>
+            <p>
+                <img src="img/main_13.png" alt="">
+                4MOTIONN智能四驱
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                Active Cotrol驾驶模式选择
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                Front Assist欲碰撞安全系统<br> &nbsp;&nbsp;&nbsp;(含CEB城市紧急制动)
+            </p>
+            <button>售价：<a>194,800</a>元</button>
+        </li>
+        <li>
+            <span>280TSI自动豪华四驱</span><hr>
+            <p>
+                <img src="img/main_13.png" alt="">
+                4MOTIONN智能四驱
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                Actie Info Display全液晶数字仪表
+            </p>
+            <p>
+                <img src="img/main_13.png" alt="">
+                Active Cotrol驾驶模式选择
+            </p>
+            <button>售价：<a>209,800</a>元</button>
+        </li>
+    </ul>
+    <button class="mall">查 看 更 多 车 型 配 置</button>
+    <section class="experience">
+        <img src="img/main_3.png" alt="">
+        <input type="text" value="点击输入姓名" class="input1">
+        <input type="text" value="点击输入手机号码"  class="input1">
+        <select class="select">
+            <option>--请选择省份--</option>
+            <option value="option1">辽宁</option>
+            <option value="option2">云南</option>
+            <option value="option3">江苏</option>
+            <option value="option3">江西</option>
+            <option value="option3">四川</option>
+            <option value="option3">湖北</option>
+            <option value="option3">广西</option>
+            <option value="option3">黑龙江</option>
+            <option value="option3">山东</option>
+            <option value="option3">浙江</option>
+            <option value="option3">湖南</option>
+            <option value="option3">安徽</option>
+            <option value="option3">甘肃</option>
+            <option value="option3">新疆</option>
+            <option value="option3">山西</option>
+            <option value="option3">广东</option>
+            <option value="option3">海南</option>
+            <option value="option3">青海</option>
+            <option value="option3">贵州</option>
+            <option value="option3">河南</option>
+            <option value="option3">重庆</option>
+            <option value="option3">福建</option>
+            <option value="option3">北京</option>
+            <option value="option3">内蒙古</option>
+            <option value="option3">吉林</option>
+            <option value="option3">陕西</option>
+            <option value="option3">河北</option>
+            <option value="option3">宁夏</option>
+            <option value="option3">天津</option>
+            <option value="option3">上海</option>
+            <option value="option3">西藏</option>
+
+        </select>
+        <select class="select">
+            <option>--请选择城市--</option>
+        </select>
+        <select class="select1">
+            <option>--请选择经销商--</option>
+        </select>
+        <div><input type="checkbox"><span>我同意将信息提供给一汽-大众厂商授权的经理商与您进一步沟通试驾事宜</span></div>
+        <input type="button" value="确认提交>" class="input2">
+    </section>
+    <section class="lunbo">
+        <img src="img/main_4.png" alt="">
+    <div class="jd_banner">
+        <ul class="clearfix">
+            <li><a href="#"><img src="img/7.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/4.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/6.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/7.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/1.jpg" alt=""></a></li>
+        </ul>
+        <ul>
+            <li class="now"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <ol class="introduce">
+        <li><img src="img/main_6.png" alt=""></li>
+        <li><img src="img/main_7.png" alt=""></li>
+        <li><img src="img/main_8.png" alt=""></li>
+        <li><img src="img/main_9.png" alt=""></li>
+        <li><img src="img/main_10.png" alt=""></li>
+        <li><img src="img/main_11.png" alt=""></li>
+        <li><img src="img/main_12.png" alt=""></li>
+    </ol>
+    </section>
+    <div class="img">
+        <img src="img/main_5.png" alt="">
+    </div>
+
+<div id="box">
+		<ul id="ul1">
+			<li><a href=""><img src="img/11.jpg" alt=""></a></li>
+			<li><a href=""><img src="img/44.jpg" alt=""></a></li>
+			<li><a href=""><img src="img/55.jpg" alt=""></a></li>
+            <li><a href=""><img src="img/99.jpg" alt=""></a></li>
+			<li><a href=""><img src="img/111.jpg" alt=""></a></li>
+			<li><a href=""><img src="img/222.jpg" alt=""></a></li>
+			<li><a href=""><img src="img/333.jpg" alt=""></a></li>
+            <li><a href=""><img src="img/666.jpg" alt=""></a></li>
+			<li><a href=""><img src="img/777.jpg" alt=""></a></li>
+			<li><a href=""><img src="img/999.jpg" alt=""></a></li>
+		</ul>
+		<ul id="ul2">
+			<li></li>
+			<li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!--<script>
+        $('.input1').click(function(){
+            this.value=""
+        })
+    </script>-->
+    <script>
+    window.onload = function(){
+    banner();
+}
+
+var banner = function(){
+    // 1、无缝滚动&无缝滑动（定时器、过渡、位移）
+    // 2、点盒子对应改变（改变当前样式）
+    // 3、可以滑动（touch事件）
+    // // 4、当滑动距离不够的时候吸附回去（过渡、位移）
+    // 5、当超过一定距离的时候跳转，上一张或者下一张（判断方向、过渡、位移）
+    // 获取需要操作的dom元素
+    // 大容器
+    var banner = document.querySelector(".jd_banner");
+    // 轮播图宽度
+    var width = banner.offsetWidth;
+    // 图片容器
+    var imagebox = banner.querySelector("ul:first-child");
+    // 点容器
+    var pointbox = banner.querySelector("ul:last-child");
+    //所有的点
+    // var point = pointbox.childNodes;
+    var points = pointbox.querySelectorAll('li');
+
+    // 1、无缝滚动&无缝滑动（定时器、过渡、位移）setInterval在执行完一次代码之后，经过了那个固定的时间间隔，它还会自动重复执行代码，而setTimeout只执行一次那段代码。   
+    // 提取公用方法
+    var addTransition = function(){
+            // 增加过渡
+        imagebox.style.transition = 'all 0.2s';
+        imagebox.style.webkitTransition = "all 0.2s";  //兼容
+    }
+    var removeTransition = function(){
+        // 清除过渡
+        imagebox.style.transition = 'none';
+        imagebox.style.webkitTransition = "none";  //兼容
+    }
+    var setTranlateX = function(translatex){
+        // 设置位移
+        imagebox.style.transform = "translateX("+translatex+"px)";
+        imagebox.style.webkitTramsform = "translateX("+translatex+"px)";
+    }
+    var index = 1;
+    var timer = setInterval(function(){
+        index ++;
+        // 增加过渡
+        addTransition();
+        //位移
+        setTranlateX(-index*width);
+    },3000);
+    // 怎么监听过渡截止的时间 过渡结束S事件
+    imagebox.addEventListener('transitionend',function(){
+        // 无缝滚动
+        if(index >= 9){
+            // 瞬间定位到第一张
+            index =1;
+            // 先清除过渡，然后在根据index定位
+            removeTransition();
+            setTranlateX(-index*width);
+        }
+        // 无缝滑动（定时器、过渡、位移）
+        else if(index<=0){
+            index = 8;
+            removeTransition();
+            setTranlateX(-index*width);
+        }
+        setpoint();
+    })
+
+    // 点盒子的样式改变
+    var setpoint = function(){
+        // index范围1-8
+        // 去除所有的样式
+        for(var i =0;i<points.length;i++){
+            points[i].classList.remove("now");
+        }
+        // 给对应的加上
+        points[index-1].classList.add("now")
+    }
+
+    var startX = 0;  //记录开始的X的坐标
+    var distanceX = 0;   //记录坐标轴的改变
+    // 为了严谨
+    var ismove = false;
+    // 可以滑动（touch事件  监听触摸点坐标的改变距离 位移）
+    imagebox.addEventListener("touchstart",function(e){
+        // 在做滑动之前清除定时器
+        clearInterval(timer);
+        //记录开始的位移
+        startX = e.touches[0].clientX;
+        // console.log(startX);
+    });
+
+    imagebox.addEventListener("touchmove",function(e){
+        var moveX =  e.touches[0].clientX;
+        distanceX = moveX - startX;
+        //当distanceX大于0的时候向右滑动，小于0的时候向左滑动
+        // 基于当前的位置来计算定位，而不是用0,0
+        var translateX = -index*width +distanceX;
+        // // 即时的跟着手指做滑动，因此就不需过渡了
+        removeTransition();
+        // // 做定位
+        setTranlateX(translateX);
+        ismove = true;
+    });
+
+    // 手指离开屏幕的时候触发
+    imagebox.addEventListener("touchend",function(e){
+        console.log(distanceX);
+        // 滑动事件结束以后来判断当前滑动距离
+        // 有一个范围，如果滑动的范围大于三分之一则切换图片，如果小于三分之一则定位回去
+        if(ismove){
+            if(Math.abs(distanceX)<width/3){
+                // 移动距离不够的时候（过渡效果、位移）
+                addTransition();
+                setTranlateX(-index*width);
+            }else{
+                //滑动距离够了的时候（切换上一张、下一张）
+                if(distanceX>0){
+                    // 向右滑，切换到上一张
+                    index--;
+                }else{
+                    // 向左滑
+                    index++;
+                }
+                addTransition();
+                setTranlateX(-index*width);
+            }
+        }
+        // 为了严谨，保证只加一次定时器
+        clearInterval(timer);
+        // 手指离开的时候要加上定时器
+        timer = setInterval(function(){
+            index ++;
+            // 增加过渡
+            addTransition();
+            //位移
+            setTranlateX(-index*width);
+        },2000);
+        //重置参数，表面滑动结束后对效果产生影响
+        startX = 0;
+        distanceX = 0;
+        ismove = false;
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	var oBox=document.getElementById('box');
+	var oUl1=document.getElementById('ul1');
+	var oLi1=oUl1.getElementsByTagName('li');
+	var oUl2=document.getElementById('ul2');
+	var oLi2=oUl2.getElementsByTagName('li');
+	var oLi1Width=oLi1[0].offsetWidth;
+	var timer=null;
+	var time=null;
+	var y=0;
+	//alert(oLi1Width);
+	oUl1.style.width=oLi1Width*oLi1.length+'px';    //给ul1一个宽度
+
+	for(var i=0;i<oLi2.length;i++){
+		//alert(i)
+		oLi2[i].index=i;   //获取li2的索引
+		oLi2[i].onmouseover=function(){
+			show(this.index)
+			// alert(this.index)
+		}
+	}
+
+	oBox.onmouseover=function(){      //鼠标放上定时器停止
+		clearInterval(time);
+	}
+
+	oBox.onmouseout=function(){       //鼠标离开开启定时器
+		time=setInterval(function(){
+			show(y);
+			y++;
+			//alert(oLi2.length)
+			if(y==oLi2.length){y=0}    
+		},2000)
+	}
+
+	clearInterval(time);
+	time=setInterval(function(){      //自动轮播
+		show(y);
+		y++;
+		//alert(oLi2.length)
+		if(y==oLi2.length){y=0}    //图片轮播结束，拽回第一个重新开始；
+	},2000)
+
+	function show(j){         //鼠标放上li2对应的li运动并且li2对应的颜色改变
+		for(var i=0;i<oLi2.length;i++){
+				oLi2[i].className="";
+			}
+			oLi2[j].className="active";
+
+			clearInterval(timer);
+			timer=setInterval(function(){
+				var iSpeed=(-oUl1.offsetLeft-oLi1Width*j)/6;     //缓冲运动
+				var x=iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);
+				oUl1.style.left=x+oUl1.offsetLeft+'px';
+			},22)
+	}
+
+
+
+    </script>
+</body>
+</html>
