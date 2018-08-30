@@ -327,13 +327,19 @@ video{
 
 
 
-
-#box{
-            width: 100%;height:7.5rem;overflow: hidden;line-height: 7.5rem;font-size: 50px;text-align: center;color:#fff;
-        }
-        ul{
-            width: 400%;height:7.5rem;overflow:hidden;
-        }
-        ul li{
-            width: 100%;height:7.5rem;float:left;
-        }
+.swiper-container{
+      .banner{
+    height:500/$rem*1rem;
+    width:100%;
+    box-sizing: border-box;
+    img{
+        width:100%;
+        height:100%;
+    }
+}
+  }
+  .swiper-container{
+      height:500/$rem*1rem;
+      width:100%;
+      border:1px solid red;
+  }
