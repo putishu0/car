@@ -284,16 +284,76 @@
             <li></li>
 
 		</ul>-->
-        <div class="swiper-container"style="width: 38%;"><!--swiper容器[可以随意更改该容器的样式-->
- <div class="swiper-wrapper"> 
- <div class="swiper-slide"><img src="img/11.jpg"></div> 
- <div class="swiper-slide"><img src="img/44.jpg"></div> 
- <div class="swiper-slide"><img src="img/55.jpg"></div> 
- </div> 
- <div class="swiper-pagination" style="width: 100px;float: right"></div><!--分页器-->、 
- <div class="swiper-button-prev"></div><!--前进按钮-->
- <div class="swiper-button-next"></div><!--后退按钮-->
-</div> 
+        <<div id="box">
+            <ul >
+                <li style="background:red;">1</li>
+                <li style="background:yellow;">2</li>
+                <li style="background:blue;">3</li>
+                <li style="background:green;">4</li>
+            </ul>
+        </div>
+
+<script>
+        (function(win,doc){
+            function change(){
+                doc.documentElement.style.fontSize=doc.documentElement.client        Width*20/320+'px';
+            }
+            change();
+            win.onresize=change;
+        })(window,document);
+    </script>
+    <script>
+        function drag(oDiv,aLi){
+            var x=0;
+            var iNow=0;
+            oDiv.addEventListener('touchstart', function(ev){
+                var id= ev.targetTouches[0].identifier;
+                var disX= ev.targetTouches[0].pageX - x
+                var downX=ev.targetTouches[0].pageX;
+                function fnMove(ev){
+                    if(ev.targetTouches[0].identifier==id){
+                        x=ev.targetTouches[0].pageX - disX;
+                        oDiv.style.transform='translateX('+x+'px)';
+                    }
+                }
+                function fnEnd(ev){
+                    if(ev.changedTouches[0].identifier==id){
+                        document.removeEventListener('touchmove',fnMove, false);
+                        document.removeEventListener('touchend', fnEnd, false);
+                        oDiv.style.transition='1s all linear';
+                        var upX=ev.changedTouches[0].pageX;
+                        if(Math.abs(upX-downX)>50){
+                            if(upX-downX<0){
+                                iNow++;
+                                if(iNow==4){
+                                    iNow=3;
+                                }
+                            }else{
+                                iNow--;
+                                if(iNow==-1){
+                                    iNow=0;
+                                }
+                            }
+                        }
+                        oDiv.style.transform='translateX('+-iNow*aLi.offsetWidth+'px)';
+                        oDiv.addEventListener('transitionend',function(){
+                            oDiv.style.transition='none';
+                            x=-iNow*aLi.offsetWidth;
+                        },false);
+                
+                    }
+                }
+                document.addEventListener('touchmove',fnMove, false);
+                document.addEventListener('touchend', fnEnd, false);
+                ev.preventDefault();        //事件绑定用的阻止默认事件;
+            }, false)
+        };
+        document.addEventListener('DOMContentLoaded',function(){
+            var oUl=document.querySelector('#box ul');
+            var aLi=oUl.children;
+            drag(oUl,aLi[0]);
+        },false);
+    </script>
 
 </body>
 </html>
