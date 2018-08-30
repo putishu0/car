@@ -258,32 +258,6 @@
         <img src="img/main_5.png" alt="">
     </div>
 <!--第二个轮播图-->
-<!--<div id="box">-->
-		<!--<ul id="ul1">
-			<li><a href=""><img src="img/11.jpg" alt=""></a></li>
-			<li><a href=""><img src="img/44.jpg" alt=""></a></li>
-			<li><a href=""><img src="img/55.jpg" alt=""></a></li>
-            <li><a href=""><img src="img/99.jpg" alt=""></a></li>
-			<li><a href=""><img src="img/111.jpg" alt=""></a></li>
-			<li><a href=""><img src="img/222.jpg" alt=""></a></li>
-			<li><a href=""><img src="img/333.jpg" alt=""></a></li>
-            <li><a href=""><img src="img/666.jpg" alt=""></a></li>
-			<li><a href=""><img src="img/777.jpg" alt=""></a></li>
-			<li><a href=""><img src="img/999.jpg" alt=""></a></li>
-		</ul>
-		<ul id="ul2">
-			<li></li>
-			<li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-
-		</ul>-->
        <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="img/11.jpg" alt=""></div>
@@ -291,27 +265,21 @@
         <div class="swiper-slide"><img src="img/55.jpg" alt=""></div>
         <div class="swiper-slide"><img src="img/99.jpg" alt=""></div>
         <div class="swiper-slide"><img src="img/111.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/222.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/333.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/666.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/777.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/999.jpg" alt=""></div>
     </div>
     <div class="swiper-pagination"></div>
    </div>
-   <script src="swiper/swiper.min.js"></script>
-    <script type="text/javascript">
-    window.onload = function() {
-      var mySwiper = new Swiper ('.swiper-container', {
-        direction:'horizontal',
-        loop: true,
-        autoplay:1000,
-        speed:2000,
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-　　　　  autoplayDisableOnInteraction : false,
-        scrollbar: '.swiper-scrollbar',
-         pagination: {
-      el: '.swiper-pagination',
-    },
-      });
-    }        
+   <script src="swiper/swiper.min.js"></script>      
     </script>
+    <script>
+     // 表单清空
+ $('.input1').click(function(){
+         this.value=""
+ })
+ </script>
 </body>
 </html>

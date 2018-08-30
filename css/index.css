@@ -311,17 +311,27 @@ video {
 #ul2 .active {
   background: #f3302a; }
 
-.swiper-container .banner {
-  height: 6.66667rem;
+.swiper-container {
+  height: 7.33333rem;
   width: 100%;
   box-sizing: border-box; }
-  .swiper-container .banner img {
-    width: 100%;
-    height: 100%; }
 
-.swiper-container {
-  height: 6.66667rem;
+.swiper-wrapper {
   width: 100%;
-  border: 1px solid red; }
+  height: 6.66667rem; }
+  .swiper-wrapper .swiper-slide {
+    height: 6.66667rem;
+    width: 100%; }
+    .swiper-wrapper .swiper-slide img {
+      height: 100%;
+      width: 100%; }
+
+.swiper-pagination {
+  position: absolute;
+  z-index: 100; }
+  .swiper-pagination span {
+    height: 0.08rem;
+    width: 0.4rem;
+    background: #ccc; }
 
 /*# sourceMappingURL=index.css.map */

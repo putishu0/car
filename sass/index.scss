@@ -328,18 +328,29 @@ video{
 
 
 .swiper-container{
-      .banner{
-    height:500/$rem*1rem;
-    width:100%;
-    box-sizing: border-box;
-    img{
-        width:100%;
-        height:100%;
-    }
-}
+      height:550/$rem*1rem;
+      width:100%;
+      box-sizing: border-box;
   }
-  .swiper-container{
+  .swiper-wrapper{
+      width:100%;
+      height:500/$rem*1rem;
+      .swiper-slide{
       height:500/$rem*1rem;
       width:100%;
-      border:1px solid red;
+      img{
+          height:100%;
+          width:100%;
+      }
   }
+  }
+  
+.swiper-pagination{
+    position: absolute;
+    z-index: 100;
+    span{
+        height:6/$rem*1rem;
+        width:30/$rem*1rem;
+        background: #ccc;
+    }
+}
