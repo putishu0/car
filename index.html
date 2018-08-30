@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/js.js"></script>
+    <link rel="stylesheet" href="swiper/swiper.min.css">
     <script>
         var pixelRatio = 1 / window.devicePixelRatio; //还原设备的真实分辨率；
         //devicePixelRatio设备的像素比；
@@ -257,8 +258,8 @@
         <img src="img/main_5.png" alt="">
     </div>
 <!--第二个轮播图-->
-<div id="box">
-		<ul id="ul1">
+<!--<div id="box">-->
+		<!--<ul id="ul1">
 			<li><a href=""><img src="img/11.jpg" alt=""></a></li>
 			<li><a href=""><img src="img/44.jpg" alt=""></a></li>
 			<li><a href=""><img src="img/55.jpg" alt=""></a></li>
@@ -282,34 +283,17 @@
             <li></li>
             <li></li>
 
-		</ul>
-	</div>
+		</ul>-->
+        <div class="swiper-container"style="width: 38%;"><!--swiper容器[可以随意更改该容器的样式-->
+ <div class="swiper-wrapper"> 
+ <div class="swiper-slide"><img src="img/11.jpg"></div> 
+ <div class="swiper-slide"><img src="img/44.jpg"></div> 
+ <div class="swiper-slide"><img src="img/55.jpg"></div> 
+ </div> 
+ <div class="swiper-pagination" style="width: 100px;float: right"></div><!--分页器-->、 
+ <div class="swiper-button-prev"></div><!--前进按钮-->
+ <div class="swiper-button-next"></div><!--后退按钮-->
+</div> 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <!--<script>
-        $('.input1').click(function(){
-            this.value=""
-        })
-    </script>-->
-    <script>
-    
-
-
-
-    </script>
 </body>
 </html>

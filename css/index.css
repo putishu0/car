@@ -311,4 +311,39 @@ video {
 #ul2 .active {
   background: #f3302a; }
 
+#lunbotu {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative; }
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative; }
+
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative; }
+
+/* END required styles */
+.swipe-wrap img {
+  width: 30%; }
+
+.yuandian {
+  right: 10px;
+  bottom: 5px;
+  position: absolute;
+  /*height: 40px;*/ }
+
+.yuandian li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: floralwhite;
+  float: left;
+  margin-right: 10px; }
+
+.yuandian .cur {
+  background: red; }
+
 /*# sourceMappingURL=index.css.map */
